@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Orpets",
+  "version": "0.1.1",
+  "description": "Easily see if Fido can stay at your Orbitz.com(R) Hotel",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": ["orpets.js"],
+      "matches": ["https://www.orbitz.com/Hotel-Search*"]
+    }
+  ]
+}
